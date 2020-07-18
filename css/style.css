@@ -1,0 +1,351 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------------main-------------------------*/
+
+.main {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+/*--------------------header------------------------*/
+
+.header {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgb(209, 160, 160),
+    rgb(230, 215, 215),
+    rgb(255, 255, 255)
+  );
+  display: flex;
+  height: 120px;
+  width: 100%;
+  border-bottom: 5px solid rgb(94, 7, 7);
+}
+.left-column {
+  position: relative;
+  display: flex;
+  flex-basis: 20%;
+}
+.icon img {
+  margin: 20 auto auto 10px;
+}
+.left-column p {
+  position: relative;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+  padding-left: 10px;
+  color: rgb(95, 6, 6);
+}
+.title {
+  position: relative;
+  font-size: 30px;
+  flex-basis: 60%;
+  text-align: center;
+  padding-top: 15px;
+}
+.title h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(102, 3, 3);
+  letter-spacing: 2px;
+}
+.title h5{
+  color: #461d1d;
+  font-size: 20px;
+}
+.title h6{
+  color: #441414;
+  font-size: 15px;
+}
+.right-column {
+  flex-basis: 20%;
+}
+.user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/*--------------------------menu---------------------------*/
+
+.menu-bar {
+  position: relative;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  height: 45px;
+  display: flex;
+}
+.menu-bar ul {
+  position: absolute;
+  display: flex;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.menu-bar ul li {
+  margin-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  list-style: none;
+  font-size: larger;
+  font-weight: 600;
+  cursor: pointer;
+}
+.menu-bar ul li:hover {
+  background: #d84e4e;
+}
+.search {
+  position: absolute;
+  display: flex;
+  right: 50px;
+  margin-top: 7px;
+}
+#btn {
+  position: absolute;
+  height: 80%;
+  cursor: pointer;
+  padding-left: 5px;
+}
+.search-field {
+  position: relative;
+  width: 250px;
+  height: 20px;
+  background: transparent;
+  outline: none;
+  border-bottom: 2px solid #999;
+  border-left: 2px solid #999;
+  border-right: 1px solid #999;
+  border-top: 1px solid #999;
+  padding: 5px 20px;
+  margin: 0px 10px;
+}
+
+/*---------------------body-------------------------*/
+
+.body {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 550px;
+}
+
+.first-column {
+  position: relative;
+  background: linear-gradient(to right, #a30303, #a35757);
+  flex-basis: 25%;
+}
+.first-column ul {
+  margin-left: 30px;
+  list-style: none;
+}
+.first-column ul li {
+  font-size: 20px;
+  font-weight: 650;
+  color: rgb(219, 197, 197);
+  margin-left: auto;
+  margin-right: 100px;
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: aquamarine;
+}
+.first-column ul li:hover {
+  background: #d84e4e;
+}
+.second-column {
+  position: relative;
+  background: rgb(255, 255, 255);
+  flex-basis: 50%;
+}
+.image img {
+  position: relative;
+  width: 100%;
+}
+.third-column {
+  position: relative;
+  background: image(linear gradient);
+  flex-basis: 25%;
+  text-align: center;
+}
+.quote text p {
+  position: absolute;
+  margin-top: -100px;
+  text-align: center;
+  color: #160007;
+}
+.notifications {
+  position: absolute;
+  bottom: 120px;
+  right: 60px;
+}
+.notifications h2 {
+  color: rgb(87, 6, 6);
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.notifications ul li {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  list-style: linear-gradient(to right, #752680, #af6aaf, #f5f5f5);
+}
+
+/*--------------------footer------------------------*/
+
+.footer {
+  position: relative;
+  background: rgb(184, 148, 122);
+  width: 100%;
+  height: 200px;
+}
+.copyright {
+  font-size: 15px;
+}
+.copyright p {
+  position: absolute;
+  padding-left: 30px;
+  text-align: center;
+}
+/*********************************************************667px********************************************************************************************/
+
+@media (max-width: 667px) {
+  /*------------------------------------------------header--------------------------------------------------------*/
+  .header {
+    position: relative;
+    background: linear-gradient(
+      to right,
+      rgb(209, 160, 160),
+      rgb(230, 215, 215),
+      rgb(255, 255, 255)
+    );
+    display: flex;
+    height: 85px;
+    width: 100%;
+    border-bottom: solid 2px #160007;
+  }
+  .icon img {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 90%;
+  }
+  .left-column {
+    position: relative;
+    display: flex;
+    flex-basis: 15%;
+    background: black;
+  }
+  .left-column p {
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: rgb(95, 6, 6);
+    font-size: small;
+  }
+  .title {
+    position: relative;
+    font-size: 15px;
+    flex-basis: 60%;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .title h2 {
+    letter-spacing: normal;
+    font-weight: 900;
+  }
+  .right-column {
+    position: relative;
+    flex-basis: 20%;
+    background: black;
+  }
+  .user {
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .user img {
+    width: 80%;
+  }
+  /*-------------------------------------------------menu bar-------------------------------------------------------*/
+
+  .menu-bar {
+    position: absolute;
+    width: 100%;
+    height: 6%;
+    top: 90px;
+  }
+  .menu-bar ul {
+    position: absolute;
+    text-align: center;
+    display: inline-flex;
+    padding-top: 10px;
+  }
+  .menu-bar ul li {
+    padding-right: 5px;
+    padding-left: 5px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: auto;
+  }
+  .menu-bar ul li:hover {
+    background: rgb(228, 80, 80);
+    width: 100%;
+  }
+
+  /*--------------------------------------------------body------------------------------------------------------------*/
+  .body {
+    position: relative;
+    height: 520px;
+  }
+  .first-column {
+    position: relative;
+    background: #570a1b;
+    flex-basis: 50%;
+    height: 100%;
+  }
+  .first-column ul {
+    margin-left: 10px;
+    list-style: none;
+  }
+  .first-column ul li {
+    font-size: 15px;
+    font-weight: 650;
+    color: rgb(219, 197, 197);
+    padding-left: 5px;
+    padding-top: 30px;
+    padding-right: 5px;
+  }
+  .third-column {
+    position: absolute;
+    background: #5a0720;
+    flex-basis: 0%;
+    height: 0%;
+  }
+}
+/*----------------------------------footer----------------------------------------*/
+.footer {
+  position: relative;
+  background: rgb(219, 203, 191);
+  width: 100%;
+  height: 50px;
+}
+.copyright {
+  font-size: 15px;
+}
+.copyright p {
+  position: absolute;
+  padding-left: 30px;
+  text-align: center;
+}
